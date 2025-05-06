@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(68, 68, 68); 
+    color: black;
+}
+
+
+h1 {
+    margin-top: -100px;
+    font-weight: 600;
+    font-size: 100px;
+}
+
+.video {
+    color: rgb(26, 135, 231); 
+    text-align: center; /* Заменил align-items на text-align для выравнивания текста */
+}
+
+button {
+    background-color: black; 
+    color: #f7f7f7; 
+    padding: 20px; 
+    border: none; 
+    border-radius: 30%; 
+    font-size: 30px; 
+    margin: 10px auto; /* Изменил margin для центрирования кнопки */
+    display: block; /* Добавил для правильного центрирования */
+}
+
+.container {
+    margin: 20px auto; 
+    width: 1400px;
+}
