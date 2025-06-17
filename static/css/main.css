@@ -1,18 +1,22 @@
 body {
-    background-color: rgb(68, 68, 68); 
-    color: black;
+    background-color: dimgrey;
+    color: white;
 }
 
 
-h1 {
+
+/* h1 {text-align: center;
     margin-top: -100px;
     font-weight: 600;
-    font-size: 100px;
-}
+    font-size: 100px; */
+
+p {text-align: center;}
 
 .video {
-    color: rgb(26, 135, 231); 
+    color: rgb(0, 0, 0); 
     text-align: center; /* Заменил align-items на text-align для выравнивания текста */
+    font-size: 30px;
+    margin-top: 50px;
 }
 
 button {
@@ -22,11 +26,38 @@ button {
     border: none; 
     border-radius: 30%; 
     font-size: 30px; 
-    margin: 10px auto; /* Изменил margin для центрирования кнопки */
-    display: block; /* Добавил для правильного центрирования */
-}
+    transition-duration: 0.2s;
+    }
+    button:hover {
+        background-color: rgb(143, 143, 143);
+        font-size: 2em;
+    }
 
-.container {
-    margin: 20px auto; 
-    width: 1400px;
+.box{margin-left: 25px;
+margin-top: 50px;
+margin-bottom: 50px;
 }
+.img{margin-left: 550px;}
+
+
+.text{text-align: center;
+    margin-top: 50px;
+    }
+
+.textdown{text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    }
+ .textdown{text-align: center;
+    margin-bottom: 50px;
+    }   
+
+ .textdown{text-align: center;
+    }   
+/* .container {
+    margin-left: 870px; 
+    width: 100px;
+} */
+.main{text-align: center;}
+
+.line{margin-top: 100px;}
