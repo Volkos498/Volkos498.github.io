@@ -29,5 +29,8 @@ def band_i():
 @app.route('/O')
 def onas():
     return render_template('O_nas.html')
+@app.route('/N')
+def novosti():
+    return render_template('Novosti.html')
 if __name__ == "__main__":
     app.run(debug=True)
