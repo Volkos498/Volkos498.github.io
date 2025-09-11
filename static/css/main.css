@@ -54,7 +54,7 @@ button2 {
 margin-top: 50px;
 margin-bottom: 50px;
 }
-.img{margin-left: 550px;}
+.img{margin-left: 10%;}
 .zoom-effect { transition: transform 0.2s; } .zoom-effect:hover { transform: scale(1.1); }
 .img2{margin-left}
 
@@ -80,7 +80,7 @@ margin-bottom: 50px;
 
 .line{margin-top: 100px;}
 
-.btline{display: inline-block; margin-left: auto;}
+.btline{}
 
 .video2{text-align: center; /* Заменил align-items на text-align для выравнивания текста */
     font-size: 30px;
@@ -88,4 +88,11 @@ margin-bottom: 50px;
 
 .nav-item .nav-link {
     color: white;
+}
+
+@media (max-width: 700px) {img {width: 250px;}
+.btline {padding: 10%;}
+
+
+
 }
