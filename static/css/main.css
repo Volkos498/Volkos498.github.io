@@ -1,34 +1,25 @@
 body {
     background-color: rgb(42, 42, 42);
     color: white;
+    margin: 0;
+    padding: 0;
 }
 
+/* Исправлены селекторы и добавлены недостающие свойства */
+p { 
+    text-align: center; 
+}
 
-
-/* h1 {text-align: center;
-    margin-top: -100px;
-    font-weight: 600;
-    font-size: 100px; */
-
-p {text-align: center;}
-
-.video {
+.video, 
+.video2, 
+.video23 {
     color: rgb(0, 0, 0); 
-    text-align: center; /* Заменил align-items на text-align для выравнивания текста */
+    text-align: center;
     font-size: 30px;
     margin-top: 50px;
 }
-.video2 {
-    color: rgb(0, 0, 0); 
-    text-align: center; /* Заменил align-items на text-align для выравнивания текста */
-    font-size: 30px;
-    margin-top: 50px;}
 
-.video23 {
-    color: rgb(0, 0, 0); 
-    text-align: center; /* Заменил align-items на text-align для выравнивания текста */
-    font-size: 30px;
-    margin-top: 50px;}
+/* Исправлен селектор button2 на .button2 */
 button {
     background-color: black; 
     color: #f7f7f7; 
@@ -37,62 +28,98 @@ button {
     border-radius: 30%; 
     font-size: 30px; 
     transition-duration: 0.2s;
-    }
-    button:hover {
-        background-color: rgb(143, 143, 143);
-        font-size: 2em;
-    }
+    cursor: pointer;
+}
 
-button2 {
+button:hover {
+    background-color: rgb(143, 143, 143);
+    font-size: 2em;
+}
+
+.button2 {
     padding: 20px; 
     border: none; 
     border-radius: 30%; 
     font-size: 30px; 
-    transition-duration: 0.2s;}
-
-.box{margin-left: 25px;
-margin-top: 50px;
-margin-bottom: 50px;
+    transition-duration: 0.2s;
+    cursor: pointer;
 }
-.img{margin-left: 10%;}
-.zoom-effect { transition: transform 0.2s; } .zoom-effect:hover { transform: scale(1.1); }
-.img2{margin-left}
 
-.text{text-align: center;
-    margin-top: 50px;
-    }
-
-.textdown{text-align: center;
+.box {
+    margin-left: 25px;
     margin-top: 50px;
     margin-bottom: 50px;
-    }
- .textdown{text-align: center;
+}
+
+.img {
+    margin-left: 10%;
+}
+
+/* Исправлен селектор .img2 */
+.img2 {
+    margin-left: 0; /* Добавлено значение */
+}
+
+.zoom-effect { 
+    transition: transform 0.2s; 
+} 
+
+.zoom-effect:hover { 
+    transform: scale(1.1); 
+}
+
+.text {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.textdown {
+    text-align: center;
+    margin-top: 50px;
     margin-bottom: 50px;
-    }   
+}
 
- .textdown{text-align: center;
-    }   
-/* .container {
-    margin-left: 870px; 
-    width: 100px;
-} */
-.main{text-align: center;}
+/* Удалены дублирующиеся правила .textdown */
 
-.line{margin-top: 100px;}
+.main {
+    text-align: center;
+}
 
-.btline{}
-
-.video2{text-align: center; /* Заменил align-items на text-align для выравнивания текста */
-    font-size: 30px;
-    margin-top: 50px;}
+.line {
+    margin-top: 100px;
+}
 
 .nav-item .nav-link {
     color: white;
 }
 
-@media (max-width: 700px) {img {width: 250px;}
-.btline {padding: 10%;}
-
-
-
+/* Исправлены медиа-запросы */
+@media (max-width: 700px) {
+    img {
+        width: 250px;
+    }
+    
+    .btline {
+        padding: 10%;
+    }
+    
+    /* Добавлены адаптивные стили для улучшения мобильного отображения */
+    .video, 
+    .video2, 
+    .video23 {
+        font-size: 24px;
+        margin-top: 30px;
+    }
+    
+    button,
+    .button2 {
+        font-size: 24px;
+        padding: 15px;
+    }
+    
+    .box {
+        margin-left: 15px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
 }
